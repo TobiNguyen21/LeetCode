@@ -2,39 +2,6 @@
 // Output: [7,0,8]
 // Explanation: 342 + 465 = 807.
 
-class Node {
-    constructor(data) {
-        this.data = data;
-        this.pNext = null;
-    }
-}
-
-class ListNode {
-    constructor() {
-        this.pHead = null;
-        this.pTail = null;
-    }
-
-    addValue(value) {
-        const newNode = new Node(value);
-        if (this.pHead == null) {
-            this.pHead = this.pTail = newNode;
-        }
-        else {
-            this.pTail.pNext = newNode;
-            this.pTail = newNode;
-        }
-    }
-}
-
-const convertArrToList = (arr) => {
-    let list = new ListNode();
-    arr.forEach(element => {
-        list.addValue(element);
-    });
-    return list;
-}
-
 const addTwoNumbers = (l1, l2) => {
     const length = (l1.length >= l2.length) ? l1.length : l2.length;
     let k = 0;
@@ -60,7 +27,6 @@ const addTwoNumbers = (l1, l2) => {
 (() => {
     const arr1 = [2, 4, 3];
     const arr2 = [5, 6, 4];
-    const l1 = convertArrToList(arr1);
-    const l2 = convertArrToList(arr2);
-    console.log(`Result: ${JSON.stringify(l1)} and ${JSON.stringify(l2)}`);
+    result = addTwoNumbers(arr1, arr2);
+    console.log(`Result: ${JSON.stringify(result)}`);
 })()
