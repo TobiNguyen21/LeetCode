@@ -1,4 +1,4 @@
 ## Solution
 <div align="center">
-    <img src="./pen.png" />
+    <img src="./pen.JPG" />
 </div>
