@@ -18,10 +18,9 @@ const towSum = (nums, target) => {
     }
 }
 
-(() => {
-    const nums = [2, 7, 11, 15];
-    const target = 9;
-    const result = towSum(nums, target);
-    console.log(`Result: ${result}`);
 
-})()
+const nums = [2, 11, 7, 15];
+const target = 9;
+const result = towSum(nums, target);
+console.log(`Result: ${result}`);
+
