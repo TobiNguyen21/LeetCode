@@ -24,9 +24,8 @@ const addTwoNumbers = (l1, l2) => {
     return result;
 }
 
-(() => {
-    const arr1 = [2, 4, 3];
-    const arr2 = [5, 6, 4];
-    result = addTwoNumbers(arr1, arr2);
-    console.log(`Result: ${JSON.stringify(result)}`);
-})()
+
+const arr1 = [2, 4, 3];
+const arr2 = [5, 6, 4];
+const result = addTwoNumbers(arr1, arr2);
+console.log(`Result: ${JSON.stringify(result)}`);

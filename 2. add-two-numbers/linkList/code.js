@@ -41,7 +41,7 @@ const addTwoNumbers = (l1, l2) => {
 
 function convertArrToListNode(arr) {
     const result = new ListNode(0);
-    console.log(`Rs: ${JSON.stringify(result)}`);
+    // console.log(`Rs: ${JSON.stringify(result)}`);
     let head = result;
     for (let i = 0; i < arr.length; i++) {
         head.next = new ListNode(arr[i]);
